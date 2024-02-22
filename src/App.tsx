@@ -1,4 +1,5 @@
 import { MenuItem } from "./components/menu-item"
+import { Home } from "./pages/home"
 
 export function App() {
 	return (
@@ -18,15 +19,15 @@ export function App() {
 
 			<div className="flex">
 				<aside className="bg-zinc-800 h-screen hidden sm:block">
+					<MenuItem icon="schedule" text="Relógio" />
 					<MenuItem icon="alarm" text="Alarme" />
 					<MenuItem icon="hourglass_top" text="Temporizador" />
 					<MenuItem icon="timer" text="Cronômetro" />
-					<MenuItem icon="schedule" text="Relógio" />
 					<MenuItem icon="update" text="Pomodoro" />
 				</aside>
 
-				<main className="p-4">
-					<h1>hello world</h1>
+				<main className="flex-1 p-4">
+					<Home />
 				</main>
 			</div>
 		</>
